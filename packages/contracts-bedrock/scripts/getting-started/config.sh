@@ -98,8 +98,23 @@ config=$(cat << EOL
   "faultGameGenesisOutputRoot": "0x0000000000000000000000000000000000000000000000000000000000000000",
   "faultGameSplitDepth": 14,
 
+   "faultGameWithdrawalDelay": 604800,
+  "proofMaturityDelaySeconds": 604800,
+  "disputeGameFinalityDelaySeconds": 302400,
+  "respectedGameType": 0,
+  "cliqueSignerAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+  "l1UseClique": true,
+
   "preimageOracleMinProposalSize": 1800000,
-  "preimageOracleChallengePeriod": 86400
+  "preimageOracleChallengePeriod": 86400,
+
+  "useFaultProofs": true,
+  "usePlasma": true,
+  "daCommitmentType": "GenericCommitment",
+  "daChallengeWindow": 160,
+  "daResolveWindow": 160,
+  "daBondSize": 1000000,
+  "daResolverRefundPercentage": 0
 }
 EOL
 )
